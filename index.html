@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Display</title>
+  <title>ひなーのゲッダン</title>
   <style>
     #image-container {
       width: 800px;
@@ -11,12 +11,19 @@
       max-width: 100%;
       max-height: 100%;
     }
+    html, css{
+      touch-action: manipulation;
+    }
   </style>
 </head>
 <body>
-
+  <p>
+  キーボードでひなーのが動きます。<br>
+  動かない時はYouTube以外の部分をクリックしてください。
+  </p>
+  
   <iframe width="800" height="450" src="https://www.youtube.com/embed/Mxa7MhlTJXc?start=983" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <img width="500" src="img/key.png">
+  <img width="500" src="img/key.png" id="keyboard">
   <div id="image-container">
     <img src="img/kawaii.png">
   </div>
