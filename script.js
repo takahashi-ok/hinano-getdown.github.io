@@ -125,3 +125,38 @@ function displayImageForKey(key){
   
   container.appendChild(img);
 }
+
+
+// 画像一覧
+var images = [
+    'img/start1.png',
+    'img/start2.png',
+    'img/getdown1.png',
+    'img/getdown2.png',
+    'img/getdown3.png',
+    'img/getdown4.png',
+    'img/getdown5.png',
+    'img/getdown6.png',
+    'img/getdown7.png',
+    'img/getdown8.png',
+    'img/getdown9.png',
+    'img/getdown10.png',
+    'img/Y_l.png',
+    'img/Y_c.png',
+    'img/Y_r.png',
+    'img/koshi1.png',
+    'img/koshi2.png',
+    'img/koshi3.png',
+    'img/ashi_l.png',
+    'img/ashi_r.png',
+    'img/kawaii.png'
+];
+
+window.onload = function(){
+
+    // 表示高速化のため画像プリロード
+    for (i = 0; i < images.length; i++){
+        var img = document.createElement('img');
+        img.src = images[i];
+    }
+}
